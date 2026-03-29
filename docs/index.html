@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GHN-4w | GOHAN 生成調理器</title>
+    <meta
+      name="description"
+      content="GOHAN 生成調理器 GHN-4w。トランスフォーマー技術が、食卓を変える。次にもっとも来ると思われる組成を、あなたの食卓に。"
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f6f2e8'/%3E%3Cpath d='M18 18h28v28H18z' fill='%23ffffff' stroke='%23c7b084' stroke-width='2'/%3E%3Cpath d='M23 23h18v18H23z' fill='%23eef1f2'/%3E%3Crect x='43' y='23' width='4' height='18' rx='2' fill='%23c7a463'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="GOHAN">
+          <div>
+            <span class="brand-mark">GOHAN</span>
+            <span class="brand-sub">GENERATIVE COOKING APPLIANCE</span>
+          </div>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="global-nav"
+          aria-label="メニューを開く"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header-nav" id="global-nav">
+          <a href="#concept">コンセプト</a>
+          <a href="#features">主要機能</a>
+          <a href="#steps">使い方</a>
+          <a href="#spec">仕様</a>
+          <a href="#story">開発者ストーリー</a>
+          <a href="#news" class="header-cta">ニュースリリース</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-card fade-in">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="hero-kicker">GENERATIVE COOKER / GHN-4w</span>
+              <h1 class="hero-title">
+                GHN-4w
+                <span class="model">GOHAN 生成調理器</span>
+              </h1>
+              <p class="hero-lead">トランスフォーマー技術が、食卓を変える。</p>
+              <p class="hero-subcopy">
+                次にもっとも来ると思われる組成を、あなたの食卓に。毎日の食事づくりに寄り添いながら、
+                ひとりひとりの好みへ静かに応える、新しい調理体験です。
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#spec">仕様を見る</a>
+                <a class="btn btn-secondary" href="#story">開発ストーリーへ</a>
+              </div>
+              <dl class="hero-meta">
+                <div>
+                  <dt>対応メニュー数</dt>
+                  <dd>12,847品目</dd>
+                </div>
+                <div>
+                  <dt>地域別味覚モデル</dt>
+                  <dd>47都道府県＋離島38地域</dd>
+                </div>
+                <div>
+                  <dt>一括生成品数</dt>
+                  <dd>最大7品</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="hero-visual">
+              <img src="./images/hero.jpg" alt="白いキッチンカウンターに置かれたGHN-4w" />
+              <div class="hero-badge">
+                <strong>独自アルゴリズム搭載</strong>
+                <span>暮らしに寄り添う生成調理を、静かに、自然に。</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="concept">
+        <div class="container concept-grid">
+          <div class="copy-block fade-in">
+            <div class="section-heading">
+              <span class="eyebrow">CONCEPT</span>
+              <h2>生成する、という新しい調理。</h2>
+            </div>
+            <p>
+              調理とは、手順を重ねることだけではありません。味わいの記憶、地域ごとの感覚、家族の好み。
+              その一つひとつを丁寧にすくい上げ、いまの食卓へ自然に結び直していくことも、これからの調理の大切な役割だと
+              GOHAN は考えました。
+            </p>
+            <p>
+              GHN-4w は、トランスフォーマー技術と独自のアルゴリズムを活用し、専用 GOHAN
+              パックから料理を生成する新発想の調理家電です。食材や設定をもとに、次にもっとも来ると思われる組成をリアルタイムで演算し、
+              ひと皿ごとに美味しさの最適点を導き出します。
+            </p>
+            <p>
+              目指したのは、難しい操作や複雑な知識を必要としないこと。毎日の延長線上にありながら、
+              これまでの調理家電にはなかった豊かさを感じられること。そのために必要な技術は、すべて本体の内側へ静かに収めました。
+            </p>
+          </div>
+          <div class="image-frame fade-in">
+            <img src="./images/food.jpg" alt="湯気を上げる料理生成イメージ" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="features">
+        <div class="container">
+          <div class="section-heading fade-in">
+            <span class="eyebrow">FEATURES</span>
+            <h2>毎日の食卓に寄り添う、4つの主要機能。</h2>
+            <p>
+              使う人の好み、地域の食文化、そして日々の献立に合わせて。GHN-4w は調理家電らしい分かりやすさの中に、
+              先進の生成体験を丁寧に織り込みました。
+            </p>
+          </div>
+          <div class="features-grid">
+            <article class="feature-card fade-in">
+              <div class="feature-icon" aria-hidden="true">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                  <path d="M8 6.5C11.5 5 14.5 5 17 6.5C20 5 22.8 5 26 6.6V23.2C22.7 21.8 20.1 21.7 17 23.3C13.9 21.7 11.1 21.9 8 23.2V6.5Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M17 6.5V23.3" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>西日本モード搭載</h3>
+              <p>西日本の繊細な薄味を完全再現。地域別の味覚データを追加学習済み。だしの輪郭や塩味の立ち上がりまで、心地よく寄り添います。</p>
+            </article>
+            <article class="feature-card fade-in">
+              <div class="feature-icon" aria-hidden="true">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                  <path d="M17 5L26 8.8V16.9C26 22.4 22.3 27.4 17 29C11.7 27.4 8 22.4 8 16.9V8.8L17 5Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12.5 17.1L15.5 20.2L21.5 13.8" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>発酵ネーション対策</h3>
+              <p>意図しない組成変化を高精度に抑制。第3世代抑制エンジンが、日々の出力品質を安定させ、安心・安全な生成を実現します。</p>
+            </article>
+            <article class="feature-card fade-in">
+              <div class="feature-icon" aria-hidden="true">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                  <path d="M8 10H26" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8 17H26" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8 24H26" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="14" cy="10" r="3" fill="currentColor"/>
+                  <circle cx="21" cy="17" r="3" fill="currentColor"/>
+                  <circle cx="12" cy="24" r="3" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3>炊き分けテクノロジー</h3>
+              <p>硬め・柔らかめ、お好みの食感をパラメータで自在にコントロール。0.1刻みの繊細な設定が、あなたらしい一杯へ導きます。</p>
+            </article>
+            <article class="feature-card fade-in">
+              <div class="feature-icon" aria-hidden="true">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                  <rect x="7" y="7" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <rect x="19" y="7" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <rect x="7" y="19" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <rect x="19" y="19" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>7品一括献立生成</h3>
+              <p>拡張されたコンテキストウィンドウにより、最大7品の献立を一度に生成。忙しい日も、食卓全体のまとまりまで美しく整えます。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="steps">
+        <div class="container">
+          <div class="section-heading fade-in">
+            <span class="eyebrow">HOW TO USE</span>
+            <h2>かんたん３ステップで、おいしいが生まれる。</h2>
+            <p>
+              毎日の調理に新しい機能が加わっても、使い方はあくまでシンプルに。いつもの流れの中で、
+              自然に生成調理を取り入れられる操作性を大切にしました。
+            </p>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card fade-in">
+              <div class="step-number">①</div>
+              <div class="step-illustration step-1" aria-hidden="true"></div>
+              <h3>STEP 1：入れる</h3>
+              <p>食材をレンジに入れるだけ。独自のセンシング技術が食材の組成を瞬時に解析します。</p>
+            </article>
+            <article class="step-card fade-in">
+              <div class="step-number">②</div>
+              <div class="step-illustration step-2" aria-hidden="true"></div>
+              <h3>STEP 2：粉を入れる</h3>
+              <p>専用GOHANパックを投入。解析結果に応じて最適な組成を自動演算します。</p>
+            </article>
+            <article class="step-card fade-in">
+              <div class="step-number">③</div>
+              <div class="step-illustration step-3" aria-hidden="true"></div>
+              <h3>STEP 3：スイッチオン</h3>
+              <p>あとはボタンを押すだけ。トランスフォーマー技術が、あなた好みの一品を生成します。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="spec">
+        <div class="container spec-grid">
+          <div class="spec-panel fade-in">
+            <div class="section-heading">
+              <span class="eyebrow">SPECIFICATION</span>
+              <h2>仕様</h2>
+              <p>暮らしの中で安心して選べるように。数字と仕様も、読みやすく丁寧に整理しました。</p>
+            </div>
+            <table class="spec-table">
+              <tbody>
+                <tr><th>品名</th><td>生成調理器</td></tr>
+                <tr><th>型番</th><td>GHN-4w</td></tr>
+                <tr><th>モデルアーキテクチャ</th><td>Transformer（第4世代）</td></tr>
+                <tr><th>対応メニュー数</th><td>12,847品目（2026年3月時点）</td></tr>
+                <tr><th>地域別味覚モデル</th><td>47都道府県＋離島38地域</td></tr>
+                <tr><th>一括生成品数</th><td>最大7品</td></tr>
+                <tr><th>粉末パック</th><td>専用GOHANパック（別売）</td></tr>
+                <tr><th>生成速度</th><td>従来比40%向上（turboモード時）</td></tr>
+                <tr><th>発酵ネーション対策</th><td>第3世代抑制エンジン搭載</td></tr>
+                <tr><th>炊き分け設定</th><td>0.1刻み（0.0〜2.0）</td></tr>
+                <tr><th>本体サイズ</th><td>W480×D390×H295mm</td></tr>
+                <tr><th>質量</th><td>約14.5kg</td></tr>
+                <tr><th>消費電力</th><td>1,200W</td></tr>
+                <tr><th>カラー</th><td>ホワイト / ブラック</td></tr>
+                <tr><th>希望小売価格</th><td>オープン価格</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="spec-product fade-in">
+            <div class="image-frame">
+              <img src="./images/product-cut.jpg" alt="GHN-4w 商品カット" />
+            </div>
+            <p class="spec-note">
+              毎日の使いやすさを考えたサイズ設計と、キッチンに自然に馴染む佇まい。
+              生活空間に置いたときの上質さまで大切に仕上げました。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="story">
+        <div class="container developer-grid">
+          <div class="developer-portrait fade-in">
+            <img src="./images/developer.jpg" alt="開発リーダーのポートレート" />
+            <div class="developer-role">
+              <strong>GOHAN 開発統括 / 佐伯 恒一</strong>
+              <span>食文化生成研究室 リーダー</span>
+            </div>
+          </div>
+          <div class="copy-block fade-in">
+            <div class="section-heading">
+              <span class="eyebrow">DEVELOPER STORY</span>
+              <h2>すべては、娘のお弁当から始まりました。</h2>
+            </div>
+            <p>
+              娘がまだ小学校へ上がる前のことでした。卵アレルギーのある娘は、みんなが大好きなオムライスを
+              お弁当に入れてもらえませんでした。彩りのいい黄色いおかずが並ぶ友だちのお弁当を見ながら、
+              「わたしも、みんなと同じのが食べたい」と小さな声で言った日の表情を、私はいまでも忘れられません。
+            </p>
+            <p>
+              そこから始まったのが、「アレルゲンだけを選択的に除去しながら、味と食感を維持する」という、
+              あまりにも難しい課題でした。3年にわたる試作と検証のあいだ、何度も行き詰まりました。
+              社内でも、不可能だという声は少なくありませんでした。それでも、食卓の当たり前をひとつでも広げたい。
+              その思いだけが、私たちを前へ進ませました。
+            </p>
+            <p>
+              転機となったのは、トランスフォーマー技術との出会いです。独自のアルゴリズムと組み合わせることで、
+              私たちはようやく、家族の記憶に寄り添う一皿へたどり着く道筋を見つけました。初めて娘が
+              「みんなと同じお弁当だ」と笑った日のことは、一生忘れません。
+            </p>
+            <p>
+              GHN-4w は、ただ新しい調理家電をつくるための製品ではありません。食べたい気持ちをあきらめないために、
+              同じ食卓を囲むよろこびを守るために、生まれた一台です。この技術が、いつか食卓のあり方そのものを変えていくと信じています。<span class="sup-note">※1</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="allergy">
+        <div class="container allergy-grid">
+          <div class="copy-block fade-in">
+            <div class="section-heading">
+              <span class="eyebrow">ALLERGY CARE</span>
+              <h2>すべての食卓に、同じ笑顔を。</h2>
+            </div>
+            <p>
+              GHN-4w は、特定原材料8品目に対応したアレルゲン選択的除去機能を搭載。家族それぞれの事情に寄り添いながら、
+              ひとつの食卓を自然に整えることを目指しました。
+            </p>
+            <p>
+              生成調理のプロセスは、あくまでシンプルです。入れる、解析する、除去する、出力する。
+              日々の操作に迷いを持ち込まず、必要な配慮だけを静かに支える設計に仕上げています。
+            </p>
+            <div class="flow-card">
+              <div class="flow-grid">
+                <div class="flow-step">
+                  <strong>入れる</strong>
+                  <span>食材と設定情報を本体へ</span>
+                </div>
+                <div class="flow-arrow" aria-hidden="true">→</div>
+                <div class="flow-step">
+                  <strong>解析</strong>
+                  <span>独自センシングで組成を演算</span>
+                </div>
+                <div class="flow-arrow" aria-hidden="true">→</div>
+                <div class="flow-step">
+                  <strong>除去</strong>
+                  <span>対象アレルゲンを選択的に抑制</span>
+                </div>
+                <div class="flow-arrow" aria-hidden="true">→</div>
+                <div class="flow-step">
+                  <strong>出力</strong>
+                  <span>味わいと食感を保ちながら生成</span>
+                </div>
+              </div>
+              <p class="allergy-note">
+                ※アレルゲン除去機能は完全な除去を保証するものではありません。重篤なアレルギー症状をお持ちの方は医師にご相談ください。
+              </p>
+            </div>
+          </div>
+          <div class="image-frame fade-in">
+            <img src="./images/allergy.jpg" alt="笑顔あふれる食卓のイメージ" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="community">
+        <div class="container community-grid">
+          <div class="image-frame fade-in">
+            <img src="./images/community.jpg" alt="地域導入事例のイメージ" />
+          </div>
+          <div class="fade-in">
+            <div class="section-heading">
+              <span class="eyebrow">CASE STUDY</span>
+              <h2>地域の食を、未来につなぐ。</h2>
+            </div>
+            <div class="cases-grid">
+              <article class="case-card">
+                <span class="case-tag">香川県小豆島町</span>
+                <h3>高齢者の食生活改善プロジェクト</h3>
+                <p>
+                  独居高齢者世帯への GHN-4w 設置を通じて、毎日の食事づくりの負担軽減と栄養バランスの安定化を支援。
+                  あわせて「おばあちゃんの味を次世代に残すデジタル食文化アーカイブ」として、地域に受け継がれてきた郷土料理の組成データを学習し、
+                  暮らしの中にある食の記憶を未来へつなぐ取り組みを進めています。
+                </p>
+              </article>
+              <article class="case-card">
+                <span class="case-tag">新潟県某市</span>
+                <h3>スマート農業×フードテック実証事業</h3>
+                <p>
+                  農林水産省モデル事業として採択された、地産地消型の生成調理プロジェクト。地元産コシヒカリの組成データをもとにした
+                  「究極の新潟ごはん」モードを搭載し、地域農業と食卓体験の新しい接点づくりに貢献しています。
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="news">
+        <div class="container">
+          <div class="section-heading fade-in">
+            <span class="eyebrow">NEWS RELEASE</span>
+            <h2>ニュースリリース</h2>
+            <p>GOHAN からのお知らせや、技術・実証事業に関する最新情報を掲載しています。</p>
+          </div>
+          <div class="news-list">
+            <article class="release-card release-highlight fade-in">
+              <span class="release-date">2026.04.01</span>
+              <h3>GHN-4w「AGIモード」搭載のお知らせ — Autonomous Gohan Itadakimasu：食の自律へ。</h3>
+              <p>
+                Autonomous Gohan Itadakimasu の頭文字を冠した新モードを搭載。食卓の状況や日々の利用傾向をもとに、
+                より自然で自律的な献立生成を目指す機能です。人が食を心配する時間を減らし、
+                食事のよろこびそのものへ意識を向けられる未来に向けて、GOHAN は次の一歩を踏み出します。
+              </p>
+            </article>
+            <article class="release-card fade-in">
+              <span class="release-date">2026.03.15</span>
+              <h3>「GHN-4w」発売のお知らせ — 西日本の薄味を完全再現、離島38地域のメニューも追加学習</h3>
+              <p>
+                地域ごとの味覚モデルを強化し、繊細なだし文化や郷土の食習慣まで視野に入れた生成調理体験を実現。日々の食卓へ、
+                より深い納得感をもたらします。
+              </p>
+            </article>
+            <article class="release-card fade-in">
+              <span class="release-date">2026.02.01</span>
+              <h3>農林水産省「スマートフードテック実証事業」に採択されました</h3>
+              <p>
+                生成調理技術と地域農業の接続可能性が評価され、官民連携による実証フェーズへ。食文化の継承と日々の栄養課題の双方へ向き合う取り組みを進めます。
+              </p>
+            </article>
+            <article class="release-card fade-in">
+              <span class="release-date">2025.12.20</span>
+              <h3>GHN-4w-turbo モード搭載 — 生成速度40%向上、粉末消費量30%削減を実現</h3>
+              <p>
+                より速く、より無駄なく。日常の使いやすさを磨き上げたアップデートにより、忙しい平日の献立づくりをさらに快適に支えます。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <strong>GOHAN by 合同会社ゴハンテクノロジーズ</strong>
+          <p>お客様相談窓口：0120-170-480</p>
+          <p>© 2026 GOHAN Technologies, Inc. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#top">製品情報</a>
+          <a href="#community">企業情報</a>
+          <a href="#news">お問い合わせ</a>
+          <a href="#spec">プライバシーポリシー</a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="notes">
+      <div class="container notes-list">
+        <div>※写真はイメージです。</div>
+        <div>※生成される料理は設定や粉末パックの状態により異なります。</div>
+        <div>※アレルゲン除去機能は完全な除去を保証するものではありません。</div>
+        <div>※対応メニュー数は2026年3月時点のものです。アップデートにより変動します。</div>
+        <div>※1 本製品は、人類および地球上の生命体において不変とされてきた課題に対する、ひとつの回答です。</div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
