@@ -681,12 +681,44 @@ button {
 }
 
 .cases-grid,
+.research-list,
 .news-list {
   display: grid;
   gap: 20px;
 }
 
-.case-card .case-tag {
+.research-card {
+  padding: 32px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(216, 216, 211, 0.92);
+  box-shadow: var(--shadow-card);
+}
+
+.research-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.research-card p {
+  margin: 0;
+  color: var(--color-text-subtle);
+}
+
+.research-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.research-actions .btn {
+  min-width: 180px;
+  justify-content: center;
+}
+
+.case-tag {
   display: inline-block;
   margin-bottom: 14px;
   padding: 7px 12px;
@@ -896,6 +928,7 @@ button {
 
   .feature-card,
   .release-card,
+  .research-card,
   .case-card,
   .step-card,
   .flow-card,
@@ -906,5 +939,10 @@ button {
 
   .hero-summary {
     grid-template-columns: 1fr;
+  }
+
+  .research-actions .btn {
+    width: 100%;
+    min-width: 0;
   }
 }
