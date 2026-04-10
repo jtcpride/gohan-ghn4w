@@ -733,6 +733,75 @@ button {
   gap: 10px;
 }
 
+.release-accordion {
+  padding: 0;
+  overflow: hidden;
+}
+
+.release-details {
+  width: 100%;
+}
+
+.release-details summary {
+  list-style: none;
+}
+
+.release-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.release-summary {
+  display: grid;
+  gap: 10px;
+  padding: 28px;
+  cursor: pointer;
+}
+
+.release-summary p {
+  margin: 0;
+  color: var(--color-text-subtle);
+}
+
+.release-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  color: var(--color-accent-deep);
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+}
+
+.release-toggle::after {
+  content: "+";
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.release-details[open] .release-toggle::after {
+  content: "-";
+}
+
+.release-body {
+  display: grid;
+  gap: 18px;
+  padding: 0 28px 28px;
+  border-top: 1px solid rgba(216, 216, 211, 0.92);
+  background: rgba(252, 252, 250, 0.92);
+}
+
+.release-body p {
+  margin: 0;
+  color: var(--color-text-subtle);
+}
+
+.release-body-meta {
+  padding-top: 22px;
+  color: var(--color-accent-deep);
+  font-size: 0.94rem;
+  letter-spacing: 0.05em;
+}
+
 .release-date {
   color: var(--color-accent-deep);
   font-size: 0.92rem;

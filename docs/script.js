@@ -49,6 +49,16 @@ const observer = new IntersectionObserver(
 
 fadeTargets.forEach((target) => observer.observe(target));
 
+const openReleaseDetailsFromHash = (hash) => {
+  if (!hash || hash === "#") return;
+  const target = document.querySelector(hash);
+  if (!target) return;
+  const details = target.querySelector("details");
+  if (details) {
+    details.open = true;
+  }
+};
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", (event) => {
     const id = anchor.getAttribute("href");
@@ -56,6 +66,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const target = document.querySelector(id);
     if (!target) return;
     event.preventDefault();
+    openReleaseDetailsFromHash(id);
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+openReleaseDetailsFromHash(window.location.hash);
