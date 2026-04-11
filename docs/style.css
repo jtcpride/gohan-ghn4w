@@ -802,6 +802,67 @@ button {
   letter-spacing: 0.05em;
 }
 
+.release-brandline {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 4px 0 6px;
+}
+
+.release-brand-logo {
+  width: 158px;
+  max-width: 42%;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.release-brand-copy {
+  display: grid;
+  gap: 4px;
+}
+
+.release-brand-copy strong {
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.release-brand-copy span {
+  color: var(--color-text-subtle);
+  font-size: 0.9rem;
+}
+
+.release-facts {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(248, 246, 241, 0.96);
+  border: 1px solid rgba(216, 216, 211, 0.92);
+}
+
+.release-facts div {
+  display: grid;
+  grid-template-columns: 148px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.release-facts strong {
+  color: var(--color-text);
+}
+
+.release-facts span {
+  color: var(--color-text-subtle);
+}
+
+.release-quote {
+  margin: 0;
+  padding: 20px 24px;
+  border-left: 4px solid rgba(183, 172, 149, 0.72);
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--color-text-subtle);
+}
+
 .release-date {
   color: var(--color-accent-deep);
   font-size: 0.92rem;
@@ -838,6 +899,16 @@ button {
 .footer-brand p {
   margin: 0 0 8px;
   color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-service-mark {
+  margin-top: 18px;
+}
+
+.footer-service-mark img {
+  width: 126px;
+  height: auto;
+  opacity: 0.94;
 }
 
 .footer-links {
@@ -922,6 +993,11 @@ button {
 
   .footer-links {
     justify-content: flex-start;
+  }
+
+  .release-facts div {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 }
 
